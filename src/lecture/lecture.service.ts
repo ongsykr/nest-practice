@@ -33,8 +33,6 @@ export class LectureService {
     return this.datas;
   }
 
-  //test
-
   searchLecture(name: string) {
     for (let i = 0; i < this.datas.length; i++) {
       if (name === this.datas[i].name) return this.datas[i];
