@@ -2,7 +2,6 @@ import { Injectable } from '@nestjs/common';
 import lectureDto from 'src/dto/lectureDto';
 import lectureData from 'src/types/lectureData';
 
-
 @Injectable()
 export class LectureService {
   datas: lectureDto[] = [
@@ -33,6 +32,8 @@ export class LectureService {
   getLecture() {
     return this.datas;
   }
+
+  //test
 
   searchLecture(name: string) {
     for (let i = 0; i < this.datas.length; i++) {
